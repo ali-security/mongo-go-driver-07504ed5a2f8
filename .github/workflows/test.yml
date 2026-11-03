@@ -1,8 +1,7 @@
 name: GoDriver Tests
 
 on:
-  push:
-  pull_request:
+  workflow_dispatch:
 
 concurrency:
   group: test-${{ github.ref }}
